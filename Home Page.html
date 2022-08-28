@@ -8,49 +8,77 @@
 	</title>
 </head>
 
-<body background="Images/Music1.jpg" , text="#8A0000" >
-	<div class="container-fluid">
+<body text="#8A0000" >
+	<div class="container-fluid" style="background-color: rgba(76, 74, 74, 0.278);">
 
-		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			<a class="navbar-brand" href="#">
-                <img src="Images/Treble1.png" width="30px" height="30px" class="d-inline-block align-top"> Treble
-            </a>
+		<!--NAVBAR-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+			<div class="navbar-nav mr-auto">
+				
+				<a class="navbar-brand" href="#">
+					<img src="Images/Treble1.png" width="50px" height="50px" class="d-inline-block align-self-md-center"> 
+					<font>Treble</font> 
+				</a>
 
-			<div class="nav navbar">
-				<a class="nav-item nav-link text-light" href="Home Page.html">HOME</a>
-				<a class="nav-item nav-link text-light" href="About.html">ABOUT</a>
-				<a class="nav-item nav-link text-light" href="Courses.html">COURSES</a>
-				<a class="nav-item nav-link text-light" href="Contact.html">CONTACT</a>
-				<a class="nav-item nav-link text-light" href="SignUp.html">SIGN UP</a>
+				<div class="nav navbar">
+					<a class="nav-item nav-link text-dark" href="Home Page.html"><font color="red">HOME</font></a>
+					<a class="nav-item nav-link text-dark" href="About.html">ABOUT</a>
+					<a class="nav-item nav-link text-dark" href="Courses.html">COURSES</a>
+					<a class="nav-item nav-link text-dark" href="Contact.html">CONTACT</a>
+					<a class="nav-item nav-link text-dark" href="SignUp.html">SIGN UP</a>
+				</div>
+
+				<form class="form-inline my-2 my-lg-0" style="margin-left: 630px;">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+				</form>
 			</div>
 		</nav>
 
-		<div class="jumbotron bg-dark" style="margin-top: 30px;">
-			<img class="" src="Images/Treble1.png" width=100 , hieght=80 , align=right>
+		<!--JUMBOTRON-->
+		<div class="jumbotron bg-light" style="margin-top: 30px;">
+			<img class="" src="Images/Treble.png" width="100px" , hieght="20px" , align=right>
 
 			<div class="row">
-				<div class="col-12"><h1 class="display-1 text-light">TREBLE MUSIC SCHOOL</h1></div>
+				<div class="col-12"><h1 class="display-1 text-dark"><font color="red">TREBLE</font> MUSIC SCHOOL</h1></div>
 			</div>
 
 			<div class="row">
-				<div class="col-6"><p class="display-4"> Feel the music... </p></div>
+				<div class="col-6"><p class="display-4" style="color: rgb(100, 100, 100);"> Feel the music<font color="red">...</font></p></div>
 				<div class="col-6"></div>	
 			</div>
-			
+
+			<div class="row"><p class="col-12"><br></p></div>
+			<div class="row"><p class="col-12"><br></p></div>
+			<div class="row"><p class="col-12"><br></p></div>
+
 			<div class="row">
-				<div class="col-6"><font class="col-6" color=red> (HOME) </font></div>
+				<div class="col-6"><font class="col-6" color=red>(HOME)</font></div>
+				<div class="col-md-1.5 offset-md-5 custom-control custom-switch align-bottom">
+					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right>
+					<label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
+				</div>
 			</div>
-			
 		</div>
+
+
+		<!--WELCOME-->
+		<div class="" style="position: relative; text-align: center;">
+			<img class="img-fluid rounded" src="Images/HomePage Guitar.jpg" style="width: 100%;">
+			
+			<div class="" style="position: absolute; top: 50%; transform: translate(10%, -50%);">
+				<h2 class="Display-2" style="background-color: rgba(135, 135, 135, 0.73); text-align: center; color: black;"> 
+					Hellooo! Welcome to our website!
+				</h2>
+			</div>
+		</div>
+		
 	
-
-		<h2> Hellooo! Welcome to our website!</h2>
-
-		<BASEFONT face="Verdana" size=1 color="#8A0000">
-
-		<p> Music is the essential part of human life. We can�t forget any sorrow without the music. Music is the pleasant sound, which leads the most powerful and important things in the life. <br>
-			Without any melodies and harmony, life becomes annoying. It gives the greater happiness and experience peace in the life.
-		</p>
+		<div class="container" style="text-align: justify; text-justify: inter-word;">
+			<p class="Display-5"> Music is the essential part of human life. We can't forget any sorrow without the music. Music is the pleasant sound, which leads the most powerful and important things in the life. <br>
+				Without any melodies and harmony, life becomes annoying. It gives the greater happiness and experience peace in the life.
+			</p>
+		</div>
 
 		<p>The <b><i>Treble Music School</i></b> beats at the very heart of Pune's thriving entertainment business.<br>
 		Its aim is to train the next generation of musicians, especially in instruments and performances.<br>
@@ -66,7 +94,6 @@
 			<LI><A href="Contact.html"> Contact </A>
 			<LI><A href="Courses.html"> Courses </A>
 			<LI><A href="SignUp.html"> Sign Up </A>
-			
 		</UL>
 	
 	</div>
