@@ -1,3 +1,45 @@
 #SearchForm {
     align-items: right !important;
 }
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.maindiv {
+    background-color: rgba(76, 74, 74, 0.278);
+}
+
+.textOnImg {
+    background-color: rgba(135, 135, 135, 0.73);
+    text-align: center;
+    color: black;
+}
+
+.imgDiv {
+    position: relative;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.cardsDiv {
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myCard {
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.851);
+}
