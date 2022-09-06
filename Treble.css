@@ -2,14 +2,6 @@
     align-items: right !important;
 }
 
-a:hover {
-    color: red;
-}
-
-a:visited {
-    color: green;
-}
-
 .dots {
     display: flex;
     justify-content: center;
@@ -18,6 +10,7 @@ a:visited {
 
 .maindiv {
     background-color: rgba(76, 74, 74, 0.278);
+    color: black;
 }
 
 .textOnImg {
@@ -49,4 +42,28 @@ a:visited {
     text-align: center;
     background-color: white;
     margin-top: 2%;
+}
+
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(89, 88, 88);
+}
+
+nav a {
+    color: rgb(67, 66, 66);
+    margin-right: 17px;
+    padding: 0px 0;
+}
+
+.eopNav {
+    color: grey;
+}
+
+li a:hover {
+    color: rgba(182, 2, 2, 0.866);
 }
