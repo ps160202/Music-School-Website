@@ -4,25 +4,27 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<link rel="stylesheet" href="Treble.css">
 
+	<script src="Treble.js"></script>
+
 	<title>
 		TMS Homepage
 	</title>
 </head>
 
-<body style="text: grey;">
-	<div class="container-fluid maindiv">
+<body>
+	<div class="container-fluid maindiv" id="">
 
 	<!--NAVBAR-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded" id="navigationBar">
 			<div class="navbar-nav mr-auto">
 				
 				<a class="navbar-brand" href="#">
-					<img src="Images/Treble1.png" width="50px" height="50px" class="d-inline-block align-self-center"> Treble
+					<img id="navImg" src="Images/Treble1.png" width="50px" height="50px" class="d-inline-block align-self-center"> Treble
 				</a>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<div class="nav navbar">
-						<a class="nav-item" href="Home Page.html" style="color: red;">HOME</a>
+						<a class="nav-item" href="Home Page.html"><font color="red">HOME</font></a>
 						<a class="nav-item" href="About.html">ABOUT</a>
 						<a class="nav-item" href="Courses.html">COURSES</a>
 						<a class="nav-item" href="Contact.html">CONTACT</a>
@@ -30,19 +32,19 @@
 					</div>
 
 					<form class="form-inline my-2 my-lg-0" style="margin-left: 630px;">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-danger" type="submit">Search</button>
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchTextField">
+						<button class="btn btn-outline-danger" type="submit" id="searchButton">Search</button>
 					</form>
 				</div>
 			</div>
 		</nav>
 
 	<!--JUMBOTRON-->
-		<div class="jumbotron bg-light" style="margin-top: 2%;">
+		<div class="jumbotron bg-light" style="margin-top: 2%;" id="jumbotron">
 			<img class="" src="Images/Treble.png" width="100px" , hieght="20px" , align=right>
 
 			<div class="row">
-				<div class="col-12"><h1 class="display-1 text-dark"><font color="red">TREBLE</font> MUSIC SCHOOL</h1></div>
+				<div class="col-12"><h1 class="display-1 text-dark" id="jumbotronTitle"><font color="red">TREBLE</font> MUSIC SCHOOL</h1></div>
 			</div>
 
 			<div class="row">
@@ -57,7 +59,7 @@
 			<div class="row">
 				<div class="col-6"><font class="col-6" color=red>(HOME)</font></div>
 				<div class="col-md-1.5 offset-md-5 custom-control custom-switch align-bottom">
-					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right>
+					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right onclick="darkMode()">
 					<label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
 				</div>
 			</div>
@@ -74,7 +76,7 @@
 			<img class="img-fluid rounded" src="Images/HomePage Guitar.jpg" style="width: 100%;">
 			
 			<div class="" style="position: absolute;">
-					<h2 class="Display-2 textOnImg"> 
+					<h2 class="Display-2 textOnImg" id="textOnImgID"> 
 						Hellooo! Welcome to our website!
 					</h2>
 			</div>
@@ -116,7 +118,7 @@
 
 			<div class="container" style="position: absolute;">
 				
-				<h2 class="Display-2 textOnImg"> 
+				<h2 class="Display-2 textOnImg" id="textOnImgID1"> 
 					Courses we offer:
 				</h2>
 								

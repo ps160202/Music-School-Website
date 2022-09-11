@@ -19,6 +19,12 @@
     color: black;
 }
 
+.textOnImgDark {
+    background-color: rgba(50, 50, 50, 0.73);
+    text-align: center;
+    color: rgb(255, 254, 254);
+}
+
 .imgDiv {
     display: flex;
     align-items: center;
@@ -66,4 +72,8 @@ nav a {
 
 li a:hover {
     color: rgba(182, 2, 2, 0.866);
+}
+
+.nav-darkText {
+    color: rgba(255, 255, 255, 0.800);
 }
