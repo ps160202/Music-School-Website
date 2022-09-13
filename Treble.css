@@ -77,3 +77,11 @@ li a:hover {
 .nav-darkText {
     color: rgba(255, 255, 255, 0.800);
 }
+
+.myHR {
+    background-color: rgba(0, 0, 0, 0.511);
+}
+
+.myHRDark {
+    background-color: white;
+}
