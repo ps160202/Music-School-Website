@@ -85,3 +85,26 @@ li a:hover {
 .myHRDark {
     background-color: white;
 }
+
+.ball {
+    animation: float 3s ease-in-out infinite;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+
+    background: radial-gradient( circle at 75% 30%, red 5px,
+        red 8%);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
