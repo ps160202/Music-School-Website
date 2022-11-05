@@ -28,6 +28,7 @@ function darkMode() {
         {
             document.getElementById("jumbotron").className = "jumbotron bg-dark";
             document.getElementById("jumbotronTitle").className = "Display-1 text-light";
+            document.getElementById("jumbotronTitleAbt").className = "Display-3 text-light";
             document.getElementById("darkModeSwitchLabel").style.color = "white";
         }
         
@@ -46,6 +47,7 @@ function darkMode() {
 
         document.getElementById("musicText").className="Display-4 text-light";
         document.getElementById("aboutText").className="container Display-5 text-light";
+        document.getElementById("aboutPageTxt").className="container Display-5 text-light";
         
 
         //CARDS
