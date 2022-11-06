@@ -4,6 +4,11 @@
 	<link rel="stylesheet" href="Treble.css">
 
 	<script src="Treble.js"></script>
+	<script  type="text/babel" src="darkModeState.js"></script>
+
+	<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 	<title>
 		TMS Courses
@@ -59,8 +64,7 @@
 			<div class="row">
 				<div class="col-6"><font class="col-6" color=red>(COURSES)</font></div>
 				<div class="col-md-1.5 offset-md-5 custom-control custom-switch align-bottom">
-					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right onclick="darkMode()">
-					<label class="custom-control-label" for="darkModeSwitch" id="darkModeSwitchLabel">Dark Mode</label>
+					<div id="darkSwitch"></div>
 				</div>
 			</div>
 		</div>
@@ -82,7 +86,7 @@
 					</h2>
 			</div>
 
-			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+			<a class="btn btn-danger btn-lg btnOnImg" href="Piano.html">Check out Course</a>
 
 			
 		</div>
@@ -105,7 +109,7 @@
 					</h2>
 			</div>
 
-			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+			<a class="btn btn-danger btn-lg btnOnImg" href="Keyboard.html">Check out Course</a>
 		</div>
 
 		
@@ -126,7 +130,7 @@
 					</h2>
 			</div>
 
-			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+			<a class="btn btn-danger btn-lg btnOnImg" href="Guitars.html">Check out Course</a>
 		</div>
 
 		
@@ -147,7 +151,7 @@
 					</h2>
 			</div>
 
-			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+			<a class="btn btn-danger btn-lg btnOnImg" href="Bass.html">Check out Course</a>
 		</div>
 
 		
@@ -168,7 +172,7 @@
 					</h2>
 			</div>
 
-			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+			<a class="btn btn-danger btn-lg btnOnImg" href="Drums.html">Check out Course</a>
 		</div>
 
 		
@@ -190,7 +194,7 @@
 					</h2>
 			</div>
 
-			<button class="btn btn-danger btn-lg btnOnImg">Check out Course</button>
+			<a class="btn btn-danger btn-lg btnOnImg" href="Violin.html">Check out Course</a>
 		</div>
 
 		
