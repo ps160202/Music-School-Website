@@ -4,12 +4,17 @@
 	<link rel="stylesheet" href="Treble.css">
 
 	<script src="Treble.js"></script>
+	<script  type="text/babel" src="darkModeState.js"></script>
+
+	<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 	<title>
 		TMS Homepage
 	</title>
 </head>
-<body>
+<body id="aboutPage">
 	<div class="container-fluid maindiv">
 
 	<!--NAVBAR-->
@@ -46,7 +51,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-6"><p class="display-4" style="color: rgb(111, 110, 110); font-size: 40px;"> Feel the music<font color="red">...</font></p></div>
+				<div class="col-6"><p class="display-4" style="color: rgb(132, 131, 131);"> Feel the music<font color="red">...</font></p></div>
 				<div class="col-6"></div>	
 			</div>
 
@@ -57,8 +62,7 @@
 			<div class="row">
 				<div class="col-6"><font class="col-6" color=red>(ABOUT)</font></div>
 				<div class="col-md-1.5 offset-md-5 custom-control custom-switch align-bottom">
-					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right onclick="darkMode()">
-					<label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
+					<div id="darkSwitch"></div>
 				</div>
 			</div>
 		</div>
@@ -70,7 +74,7 @@
 		</div>
 
 	<!--Founder Image-->
-		<div class="imgDiv">
+		<div class="imgDiv" id="titleOnImgText">
 			<img class="img-fluid rounded" src="Images/Founder.jpg">
 
 			<div class="" style="position: absolute;">
@@ -120,7 +124,7 @@
 
 	<!--Bottom of the Page-->
 		<div class="container-fluid" style="margin-top: 2%;">
-			<hr class="myHR" size="3" style="background-color: rgba(0, 0, 0, 0.511);">
+			<hr class="myHR" size="3" style="background-color: rgba(0, 0, 0, 0.511);" id="myHorizon">
 
 			<p class="Display-4" style="color: grey;">For more information:</p>
 

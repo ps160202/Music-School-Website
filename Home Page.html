@@ -5,6 +5,11 @@
 	<link rel="stylesheet" href="Treble.css">
 
 	<script src="Treble.js"></script>
+	<script  type="text/babel" src="darkModeState.js"></script>
+
+	<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 	<title>
 		TMS Homepage
@@ -60,8 +65,8 @@
 			<div class="row">
 				<div class="col-6"><font class="col-6" color=red>(HOME)</font></div>
 				<div class="col-md-1.5 offset-md-5 custom-control custom-switch align-bottom">
-					<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right onclick="darkMode()">
-					<label class="custom-control-label" for="darkModeSwitch" id="darkModeSwitchLabel">Dark Mode</label>
+					<!--<input type="checkbox" class="custom-control-input justify-content-end" id="darkModeSwitch" align=right onclick="darkMode()">-->
+					<div id="darkSwitch"></div>
 				</div>
 			</div>
 		</div>
@@ -73,7 +78,7 @@
 		</div>
 
 	<!--WELCOME-->
-		<div class="imgDiv">
+		<div class="imgDiv" id="titleOnImgText">
 			<img class="img-fluid rounded" src="Images/HomePage Guitar.jpg" style="width: 100%;">
 			
 			<div class="" style="position: absolute;">
@@ -82,8 +87,7 @@
 					</h2>
 			</div>
 		</div>
-
-		
+			
 		<div class="dots">
 			<div class="ball"></div>
 			<div class="ball" style="margin-left: 1%; margin-right: 1%;"></div>
@@ -91,7 +95,7 @@
 		</div>
 		
 	<!--MUSIC-->
-		<div class="container-fluid rounded myDiv">
+		<div class="container-fluid rounded myDiv" id="largeTextInContainer">
 
 			<br>
 
@@ -113,7 +117,7 @@
 		</div>
 
 	<!--Courses we Offer-->
-		<div class="imgDiv">
+		<div class="imgDiv" id="cardsSection">
 			<img class="img-fluid rounded" src="Images/Live Music.webp">
 
 
@@ -190,7 +194,7 @@
 		</div>
 
 	<!--About-->
-		<div class="container-fluid rounded myDiv">
+		<div class="container-fluid rounded myDiv" id="smallTextInContainer">
 
 			<br>
 
@@ -222,7 +226,7 @@
 		</div>
 
 	<!--Statistics-->
-		<div class="" style="background-color: white; margin-top: 2%; position:relative;">
+		<div class="" style="background-color: white; margin-top: 2%; position:relative;" id="statistics">
 			<img class="img-fluid rounded" src="Images/live music stats bg.jpg">
 
 			<div class="container-fluid" style="position: absolute; top: 35%;">
@@ -257,7 +261,7 @@
 
 	<!--Bottom of the Page-->
 		<div class="container-fluid" style="margin-top: 2%;">
-			<hr class="myHR" size="3" id="horizontalRule">
+			<hr class="myHR" size="3" id="horizontalRule" id="myHorizon">
 
 			<p class="Display-4" style="color: rgb(132, 131, 131);">For more information:</p>
 

@@ -11,7 +11,7 @@
 	</title>
 </head>
 
-<body>
+<body id="signupPage">
 
 	<div class="container-fluid maindiv" id="">
 	<!--NAVBAR-->
@@ -73,9 +73,10 @@
 		</div>
 
 
-		<div class="container-fluid rounded formDiv">
+	<!--FORM DIVISION-->	
+		<div class="container-fluid rounded formDiv" id="formDiv">
 
-			<h3 style="text-align: center;">ENQUIRY FORM</h3>
+			<h3 style="text-align: center;" class="text-dark" id="formTitle">ENQUIRY FORM</h3>
 			
 			<img class="" src="Images/Treble.png" width="150px" , height="300px" , align=left style="margin: 2%; margin-top: 10%; margin-left: 10%;">
 			<img class="" src="Images/Treble.png" width="150px" , height="300px" , align=right style="margin: 2%; margin-top: 10%; margin-right: 10%;">
@@ -83,37 +84,47 @@
 			<div class="container rounded formDivInt">
 				<form Method=post Action="trebleusicschoolsignup.org" style="padding-top: 2%; padding-bottom: 2%;">
 					
-					<label><b>Name:</b></label>
+					<label class="text-dark myLabel"><b>Name:</b></label>
 						<Input type="text" class="form-control" placeholder="Enter Name">
 							<br>
 			
-					<label><b>Sex:</b></label><br>
-
-						<Input type=Radio name="sex" value="Male"> Male
-						<Input type=Radio name="sex" value="Female" style="margin-left: 5%;"> Female
-							<br><br>
-			
-					<label><b>Course:</b></label><br>
-						<Input type=Radio name="course" value="Piano"> Piano
-						<Input type=Radio name="course" value="Keyboard"> Keyboard
-							<br>
-						<Input type=Radio name="course" value="Plectrum Guitar"> Plecturm Guitar
-						<Input type=Radio name="course" value="Classical Guitar"> Classical Guitar
-						<Input type=Radio name="course" value="Electronic Guitar"> Electronic Guitar	
-							<br>
-						<Input type=Radio name="course" value="Bass"> Bass
-							<br>
-						<Input type=Radio name="course" value="Drums"> Drums and Percussion
-							<br>
-						<Input type=Radio name="course" value="Violin"> Violin
-							<br><br>
+					<label class="text-dark myLabel2"><b>Sex:</b></label>
 					
-						<label><b>Email:</b></label>
+					<br>
+
+					<label class="text-dark myLabel2">
+						<Input type=Radio name="sex" value="Male"> Male							
+						<Input type=Radio name="sex" value="Female"> Female
+					</label>
+
+					<br><br>
+
+					<label class="text-dark myLabel"><b>Course:</b></label><br>
+						<label class="text-dark myLabel2">
+							<Input type=Radio name="course" value="Piano"> Piano
+							<Input type=Radio name="course" value="Keyboard"> Keyboard
+								<br>
+							<Input type=Radio name="course" value="Plectrum Guitar"> Plecturm Guitar
+							<Input type=Radio name="course" value="Classical Guitar"> Classical Guitar
+							<Input type=Radio name="course" value="Electronic Guitar"> Electronic Guitar	
+								<br>
+							<Input type=Radio name="course" value="Bass"> Bass
+								<br>
+							<Input type=Radio name="course" value="Drums"> Drums and Percussion
+								<br>
+							<Input type=Radio name="course" value="Violin"> Violin
+						</label>
+
+						
+						<br><br>
+
+						<label class="text-dark myLabel"><b>Email:</b></label>
+						
 							<Input type="email" class="form-control" placeholder="Enter Email">
 								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 								<br>
 			
-					<label><b>Special Comment:</b></label><br>
+					<label class="text-dark myLabel"><b>Special Comment:</b></label><br>
 					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 							<br>
 			
@@ -137,7 +148,6 @@
 			<hr class="myHR" size="3" id="horizontalRule">
 
 			<p class="Display-4" style="color: rgb(132, 131, 131);">For more information:</p>
-
 
 			<div class="container">
 				<nav class="nav navbar-expand nav-fill">
